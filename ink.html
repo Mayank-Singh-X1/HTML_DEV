@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+  
+      body {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+.banner .content .title {
+    font-family: 'Hallowed Grounds';
+    font-size: 9em;
+}
+.banner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(./images/bs2.jpeg);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+
+    mask-image: url(./Vids/ink_lv2.gif);
+    mask-size: cover;
+    mask-position: center;
+}
+
+.title{
+
+  
+  background:linear-gradient(90deg, #05239b, #df2222,rgb(255, 17, 160));
+  -webkit-background-clip:text; 
+  -webkit-text-fill-color: transparent;
+}
+
+
+  </style>
+
+</head>
+<body>
+    <div class="banner">
+      <div class="content">
+        <div class="title">CODED BY:</div>
+        <p>Mayank</p>
+      </div>
+    </div>
+</body>
+</html>
