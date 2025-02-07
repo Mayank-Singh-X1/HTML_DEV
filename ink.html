@@ -11,19 +11,20 @@
     margin: 0;
     background-color: #000;
     color: #fff;
+    position: relative;
 }
 .banner {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    position: relative;
+   
 }
 .banner .content .title {
     font-family: 'Hallowed Grounds';
     font-size: 9em;
 }
-.banner::before {
+.banner::after {
     content: '';
     position: absolute;
     inset: 0;
@@ -31,17 +32,14 @@
     background-size: cover;
     background-position: center;
     z-index: -1;
-
     mask-image: url(./Vids/ink_lv2.gif);
     mask-size: cover;
     mask-position: center;
 }
 
 .title{
-
-  
-  background:linear-gradient(90deg, #05239b, #df2222,rgb(255, 17, 160));
-  -webkit-background-clip:text; 
+  background:linear-gradient(90deg, #1fff27,yellow, #df2222,rgb(255, 17, 160));
+  -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent;
 }
 

@@ -3,40 +3,35 @@
 <head>
   <title>Timepass</title>
   <style>
-    article{
-      height:100%;
-      width:200px;
-      flex-direction:column;
-      display:flex;
-      border-radius:10px;  
-      background-color:rgb(96, 255, 96);
+    .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top:100px;
+  left:500px;
+}
 
-      }
+.button::before{
+  content: "🔍";  /* Adds a search icon before text */
+  margin-right: 8px;
+}
 
-      body{
-        background-color:rgb(69, 67, 67);
-      
-        height:1000px;
-      }
-
-      .ass{
-        border:solid 2px black;
-        padding:23px;
-        align-items :center;
-        justify-content:center;
-        display:flex;
-        margin-bottom: 60px;
-        
-      }
+.button::after {
+  content: " ➜";  /* Adds an arrow after text */
+  margin-left: 8px;
+}
 
   </style>
 
 </head>
-<body>
- <article>
-  <div class="ass">fuck</div>
-  <div class="ass">sbhhd</div>
-  <div class="ass">sex</div>
- </article>
+<body style="background-color:rgb(125, 121, 121);position: relative;">
+ <button class="button">search</button>
+
 </body>
 </html>
